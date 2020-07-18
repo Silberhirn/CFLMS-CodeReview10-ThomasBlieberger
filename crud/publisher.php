@@ -45,7 +45,7 @@
             if($result->num_rows > 0) {
                 while($row = $result->fetch_assoc()) {
                    echo "<tr>
-                      <td>".$row['publisher_name']."</td>
+                      <td><a href='publishermedia.php?id=".$row['id']."'>".$row['publisher_name']."</a></td>
                       <td>".$row['address']."</td>
                       <td class='text-right'><a href='publishermedia.php?id=".$row['id']."'><button type='button' class='btn btn-outline-primary'>Show media</button></a></td>
                     </tr>";
